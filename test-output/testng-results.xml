@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-29T21:14:48Z" name="Suite" finished-at="2022-08-29T21:15:54Z" duration-ms="66099">
+  <suite started-at="2022-08-30T03:40:45Z" name="Suite" finished-at="2022-08-30T03:41:46Z" duration-ms="60850">
     <groups>
     </groups>
-    <test started-at="2022-08-29T21:14:48Z" name="Test" finished-at="2022-08-29T21:15:54Z" duration-ms="66099">
+    <test started-at="2022-08-30T03:40:45Z" name="Test" finished-at="2022-08-30T03:41:46Z" duration-ms="60850">
       <class name="acti.tests.LoginPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:14:48Z" name="setUp" finished-at="2022-08-29T21:15:02Z" duration-ms="14108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:40:45Z" name="setUp" finished-at="2022-08-30T03:41:01Z" duration-ms="15794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginPageTitle()[pri:1, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:02Z" name="testLoginPageTitle" finished-at="2022-08-29T21:15:02Z" duration-ms="315" status="PASS">
+        <test-method signature="testLoginPageTitle()[pri:1, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="testLoginPageTitle" finished-at="2022-08-30T03:41:01Z" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:02Z" name="tearDown" finished-at="2022-08-29T21:15:03Z" duration-ms="823" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="tearDown" finished-at="2022-08-30T03:41:01Z" duration-ms="763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:03Z" name="setUp" finished-at="2022-08-29T21:15:15Z" duration-ms="11472" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="setUp" finished-at="2022-08-30T03:41:15Z" duration-ms="13348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testForgotPasswordLink()[pri:2, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:15Z" name="testForgotPasswordLink" finished-at="2022-08-29T21:15:15Z" duration-ms="314" status="PASS">
+        <test-method signature="testForgotPasswordLink()[pri:2, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:15Z" name="testForgotPasswordLink" finished-at="2022-08-30T03:41:15Z" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testForgotPasswordLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:15Z" name="tearDown" finished-at="2022-08-29T21:15:16Z" duration-ms="678" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:15Z" name="tearDown" finished-at="2022-08-30T03:41:17Z" duration-ms="1584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:16Z" name="setUp" finished-at="2022-08-29T21:15:29Z" duration-ms="12967" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:17Z" name="setUp" finished-at="2022-08-30T03:41:28Z" duration-ms="11302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testActiLogoIsDisplayed()[pri:3, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:29Z" name="testActiLogoIsDisplayed" finished-at="2022-08-29T21:15:29Z" duration-ms="192" status="PASS">
+        <test-method signature="testActiLogoIsDisplayed()[pri:3, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:28Z" name="testActiLogoIsDisplayed" finished-at="2022-08-30T03:41:28Z" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testActiLogoIsDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:29Z" name="tearDown" finished-at="2022-08-29T21:15:31Z" duration-ms="1799" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:28Z" name="tearDown" finished-at="2022-08-30T03:41:29Z" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:31Z" name="setUp" finished-at="2022-08-29T21:15:45Z" duration-ms="14589" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:29Z" name="setUp" finished-at="2022-08-30T03:41:40Z" duration-ms="11193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginFunction()[pri:4, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:45Z" name="testLoginFunction" finished-at="2022-08-29T21:15:53Z" duration-ms="7429" status="PASS">
+        <test-method signature="testLoginFunction()[pri:4, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:40Z" name="testLoginFunction" finished-at="2022-08-30T03:41:45Z" duration-ms="5457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginFunction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-29T21:15:53Z" name="tearDown" finished-at="2022-08-29T21:15:54Z" duration-ms="1278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:45Z" name="tearDown" finished-at="2022-08-30T03:41:46Z" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
