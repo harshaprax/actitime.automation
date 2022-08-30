@@ -7,12 +7,14 @@ import org.testng.annotations.BeforeMethod;
 import acti.driver.DriverManager;
 import acti.pages.EnterPage;
 import acti.pages.LoginPage;
+import acti.pages.TaskPage;
 
 
 public class BaseTest extends DriverManager{
 	
 	LoginPage lp;
 	EnterPage ep;
+	TaskPage tp;
 
 	@BeforeMethod
 	public void setUp( ) 
@@ -20,7 +22,7 @@ public class BaseTest extends DriverManager{
 		init_driver();
 	    lp = new LoginPage();
 		 ep = new EnterPage();
-
+         tp = new TaskPage();
 	}
 	
 
