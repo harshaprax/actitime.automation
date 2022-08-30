@@ -9,12 +9,21 @@ import acti.driver.DriverManager;
 public class TaskPage extends DriverManager{
 
 	@FindBy(xpath ="//div[text()='Add New']") WebElement buttonAddNew;
-	@FindBy(xpath="//div[@class='item CreateNewCustomer']") WebElement itemNewCustomer;
+	@FindBy(xpath="//div[@class='item createNewCustomer']") WebElement itemNewCustomer;
 	@FindBy(xpath="//input[@class='inputFieldWithPlaceholder newNameField inputNameField']") WebElement textboxcustomerName;
     @FindBy(xpath="//textarea[@placeholder='Enter Customer Description']") WebElement textareaCustomerDescription;
-    @FindBy(xpath=" //div[contains(text(),'Create Customer')]") WebElement buttonCreateCustomer ;
+    @FindBy(xpath="//div[contains(text(),'Create Customer')]") WebElement buttonCreateCustomer ;
+   
     @FindBy(xpath="//span[@class='innerHtml']") WebElement textSuccessMessage;
+    
+    @FindBy(xpath="//input[@placeholder='Start typing name ...'][1]") WebElement textboxStartTyping;
+    @FindBy(xpath=" //div[@class='icon'][1]") WebElement searchCustomer;
+  @FindBy(xpath="//div[@class='editButton'][1]") WebElement buttonEdit;
+  @FindBy(xpath="//div[@class='actions'][1]") WebElement buttonAction;
+  @FindBy(xpath="//div[@class='title'][1]  ") WebElement buttonDelete;
+  @FindBy(xpath="//span[@class='submitTitle buttonTitle'][1] ") WebElement buttonDeletePermanantly;
   
+    
     public TaskPage() {
     	PageFactory.initElements(driver, this);
     }
@@ -37,7 +46,7 @@ public class TaskPage extends DriverManager{
     public void clickCreateCutsomer() {
     	buttonCreateCustomer.click();
     }
-    public String getSuccessMessaage() {
+    public String getSuccessMessage() {
     	return textSuccessMessage.getText();
     }
 }
