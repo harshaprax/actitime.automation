@@ -16,17 +16,23 @@ import acti.driver.DriverManager;
 
 public class LoginPage extends DriverManager {
 
+//************************************Page Elements**********************************************//		
 	@FindBy(id ="username") WebElement textboxUsername;
 	@FindBy(name ="pwd") WebElement textboxPassword;
 	@FindBy(xpath ="//div[normalize-space()='Login']") WebElement buttonLogin;
 	@FindBy(xpath="//a[@id='toPasswordRecoveryPageLink']") WebElement linkForgotPassword;
 	@FindBy(xpath ="//div[@class='atLogoImg']") WebElement imgActiLogo;
-
+	
+	
+//************************************Page Inititaion**********************************************//		
+		
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 
 	}
 
+//************************************Page Actions**********************************************//		
+		
 	public void enterUsername(String username) {
 		textboxUsername.sendKeys(username);;
 	}

@@ -1,6 +1,8 @@
 package acti.utils;
 
-public class Helper {
+import acti.driver.DriverManager;
+
+public class Helper extends DriverManager{
 
 	
 	public void fn_sleep( ) {

@@ -1,61 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-30T03:40:45Z" name="Suite" finished-at="2022-08-30T03:41:46Z" duration-ms="60850">
+  <suite started-at="2022-08-31T04:15:49Z" name="Default suite" finished-at="2022-08-31T04:16:56Z" duration-ms="67650">
     <groups>
     </groups>
-    <test started-at="2022-08-30T03:40:45Z" name="Test" finished-at="2022-08-30T03:41:46Z" duration-ms="60850">
-      <class name="acti.tests.LoginPageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:40:45Z" name="setUp" finished-at="2022-08-30T03:41:01Z" duration-ms="15794" status="PASS">
+    <test started-at="2022-08-31T04:15:49Z" name="Default test" finished-at="2022-08-31T04:16:56Z" duration-ms="67650">
+      <class name="acti.tests.TaskPageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:15:49Z" name="setUp" finished-at="2022-08-31T04:16:04Z" duration-ms="15065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginPageTitle()[pri:1, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="testLoginPageTitle" finished-at="2022-08-30T03:41:01Z" duration-ms="27" status="PASS">
+        <test-method signature="testCreateCustomer()[pri:1, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:16:04Z" name="testCreateCustomer" finished-at="2022-08-31T04:16:16Z" duration-ms="12196" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="tearDown" finished-at="2022-08-30T03:41:01Z" duration-ms="763" status="PASS">
+        </test-method> <!-- testCreateCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:16:16Z" name="tearDown" finished-at="2022-08-31T04:16:17Z" duration-ms="711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:01Z" name="setUp" finished-at="2022-08-30T03:41:15Z" duration-ms="13348" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:16:17Z" name="setUp" finished-at="2022-08-31T04:16:28Z" duration-ms="11102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testForgotPasswordLink()[pri:2, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:15Z" name="testForgotPasswordLink" finished-at="2022-08-30T03:41:15Z" duration-ms="229" status="PASS">
+        <test-method signature="testDeleteCustomer()[pri:2, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:16:28Z" name="testDeleteCustomer" finished-at="2022-08-31T04:16:56Z" duration-ms="27930" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2B3VV4RM', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\shobh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 042e9a77897c20ba85a7b356b0ace8f2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=104.0.5112.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2B3VV4RM', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\shobh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 042e9a77897c20ba85a7b356b0ace8f2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at acti.pages.TaskPage.clickSearchedCustomer(TaskPage.java:57)
+at acti.tests.TaskPageTests.testDeleteCustomer(TaskPageTests.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testForgotPasswordLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:15Z" name="tearDown" finished-at="2022-08-30T03:41:17Z" duration-ms="1584" status="PASS">
+        </test-method> <!-- testDeleteCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.TaskPageTests@3e6104fc]" started-at="2022-08-31T04:16:56Z" name="tearDown" finished-at="2022-08-31T04:16:56Z" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:17Z" name="setUp" finished-at="2022-08-30T03:41:28Z" duration-ms="11302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testActiLogoIsDisplayed()[pri:3, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:28Z" name="testActiLogoIsDisplayed" finished-at="2022-08-30T03:41:28Z" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testActiLogoIsDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:28Z" name="tearDown" finished-at="2022-08-30T03:41:29Z" duration-ms="561" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:29Z" name="setUp" finished-at="2022-08-30T03:41:40Z" duration-ms="11193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginFunction()[pri:4, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:40Z" name="testLoginFunction" finished-at="2022-08-30T03:41:45Z" duration-ms="5457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginFunction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:acti.tests.LoginPageTests@68df9280]" started-at="2022-08-30T03:41:45Z" name="tearDown" finished-at="2022-08-30T03:41:46Z" duration-ms="373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- acti.tests.LoginPageTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- acti.tests.TaskPageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class TaskPageTests extends BaseTest{
   
-	@Test
+	@Test(priority=1)
 	public void testCreateCustomer() {
 		
 		lp.enterUsername("admin");
@@ -18,13 +18,33 @@ public class TaskPageTests extends BaseTest{
 		ep.clickTask();
 		tp.clickAddNew();
 		tp.clickAddCustomer();
-		tp.enterCustomerName("Test5Customer");
+		tp.enterCustomerName("TestCustomer");
 		tp.enterCustomerDescription("This Customer created for Testing Purpose");
 		tp.clickCreateCutsomer();
-		//String message = tp.getSuccessMessage();
-	//	Assert.assertFalse(message.contains("has been Created"));
-		//Assert.assertTrue(message.contains("has been Created"));
+		String message = tp.getSuccessMessage();
+	    Assert.assertTrue(message.contains("has been created"));
         ep.clicklogout();
+	}
+	
+	@Test(priority=2)
+	public void testDeleteCustomer() {
+		lp.enterUsername("admin");
+		lp.enterPassword("manager");
+		lp.clickLogin();
+		String expected = "John Doe";
+		String actual = ep.validateUserLoggedIn();
+		System.out.println(expected);
+		Assert.assertEquals(actual, expected);
+		ep.clickTask();
+		tp.enterCustomerType("TestCustomer");
+		tp.clickSearchedCustomer();
+		tp.clickEditButton();
+		tp.clickAction();
+		tp.clickDelete();
+		tp.clickDeletePermanently();
+		String message = tp.getSuccessMessage();
+	    Assert.assertTrue(message.contains("has been deleted"));
+		ep.clicklogout();
 	}
 	
 }
