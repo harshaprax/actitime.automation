@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import acti.driver.DriverManager;
+import acti.utils.Helper;
 /*
  * Name : Enter Time Page
  * Developed By : Shobha
@@ -35,6 +36,7 @@ public class EnterPage extends DriverManager{
 	}
 	
 	public void clicklogout() {
+		Helper.fn_sleep();
 		linkLogout.click();
 	}
 	
