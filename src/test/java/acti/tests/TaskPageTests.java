@@ -18,7 +18,7 @@ public class TaskPageTests extends BaseTest{
 		ep.clickTask();
 		tp.clickAddNew();
 		tp.clickAddCustomer();
-		tp.enterCustomerName("TestCustomer");
+		tp.enterCustomerName("Testcustomer1");
 		tp.enterCustomerDescription("This Customer created for Testing Purpose");
 		tp.clickCreateCutsomer();
 		String message = tp.getSuccessMessage();
@@ -36,13 +36,13 @@ public class TaskPageTests extends BaseTest{
 		System.out.println(expected);
 		Assert.assertEquals(actual, expected);
 		ep.clickTask();
-		tp.enterCustomerType("TestCustomer");
+		tp.enterCustomerType("Testcustomer1");
 		tp.clickSearchedCustomer();
 		tp.clickEditButton();
 		tp.clickAction();
 		tp.clickDelete();
 		tp.clickDeletePermanently();
-		String message = tp.getSuccessMessage();
+		String message =tp.getSuccessMessage();
 	    Assert.assertTrue(message.contains("has been deleted"));
 		ep.clicklogout();
 	}
