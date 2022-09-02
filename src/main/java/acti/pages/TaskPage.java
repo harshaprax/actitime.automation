@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import acti.driver.DriverManager;
+import acti.utils.Helper;
 /*
  * Name :Task Page
  * Developed By : Santhosh
@@ -25,11 +26,16 @@ public class TaskPage extends DriverManager{
     @FindBy(xpath="//span[@class='innerHtml']") WebElement textSuccessMessage;
     
     @FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement textboxStartTyping;
-    @FindBy(xpath=" //div[@class='icon'][1]") WebElement searchCustomer;
-    @FindBy(xpath="//div[@class='editButton'][1]") WebElement buttonEdit;
-    @FindBy(xpath="//div[@class='actions'][1]") WebElement buttonAction;
-    @FindBy(xpath="//div[@class='title'][1]  ") WebElement buttonDelete;
-    @FindBy(xpath="//span[@class='submitTitle buttonTitle'][1] ") WebElement buttonDeletePermanently;
+  
+    @FindBy(xpath="(//span[@class='highlightToken'])") WebElement searchedCustomer; 
+    @FindBy(xpath="//div[@class='titleEditButtonContainer']//div[@class='editButton']") WebElement buttonEdit;
+	@FindBy(xpath="//div[@class='editCustomerPanelHeader']//div[@class='action'][normalize-space()='ACTIONS']")
+	WebElement buttonAction;
+	@FindBy(xpath="//div[@class='taskManagement_customerPanel']//div[@class='title'][normalize-space()='Delete']")
+	WebElement buttonDelete;
+	@FindBy(xpath="//span[normalize-space()='Delete permanently']") WebElement buttonDeletePermananently;
+	
+  
  
 //************************************Page Inititaion**********************************************//		
     
@@ -41,8 +47,9 @@ public class TaskPage extends DriverManager{
     
     public void clickDeletePermanently()
 	{
-		buttonDeletePermanently.click();
-		
+     buttonDeletePermananently.click();
+     Helper.fn_sleep();
+
 	}
 	
 	public void clickDelete()
@@ -50,20 +57,22 @@ public class TaskPage extends DriverManager{
 		buttonDelete.click();
 	}
 	
-	public void clickAction()
-	{
+	
+	public void clickAction() {
 		buttonAction.click();
 	}
 	
+	
 	public void clickEditButton()
 	{
-		buttonEdit.click();
+	buttonEdit.click();
+	Helper.fn_sleep();
 	
 	}
 	
 	public void clickSearchedCustomer()
 	{
-		searchCustomer.click();
+		searchedCustomer.click();
 	}
 	
 	public void enterCustomerType(String customername) 
@@ -87,6 +96,8 @@ public class TaskPage extends DriverManager{
    }
     public void clickCreateCutsomer() {
     	buttonCreateCustomer.click();
+    	Helper.fn_sleep();
+  
     }
     public String getSuccessMessage() {
     	return textSuccessMessage.getText();
