@@ -11,7 +11,7 @@ import acti.pages.LoginPage;
 public class LoginPageTests extends BaseTest {
 	
 
-	@Test(priority = 1,enabled=false)
+	@Test(priority = 1,enabled=true)
 	public void testLoginPageTitle() {
 	 lp = new LoginPage(); 
 		String actual = "actiTIME - Login";

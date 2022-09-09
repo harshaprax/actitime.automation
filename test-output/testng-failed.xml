@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="acti.tests.LoginPageTests">
+      <class name="acti.tests.LoginTestScreen">
         <methods>
-          <include name="testLoginFunction" invocation-numbers="2"/>
+          <include name="setupReport"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testLoginFunction" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- acti.tests.LoginPageTests -->
+      </class> <!-- acti.tests.LoginTestScreen -->
+      <class name="acti.tests.TaskPageTests">
+        <methods>
+          <include name="testDeleteCustomer"/>
+          <include name="setupReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCreateCustomer"/>
+        </methods>
+      </class> <!-- acti.tests.TaskPageTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

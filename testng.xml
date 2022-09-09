@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="acti.tests.BaseTest"/>
-       <class name="acti.tests.LoginPageTests"/>
       <class name="acti.tests.TaskPageTests"/>
+      <class name="acti.tests.LoginTestScreen"/>
+      <class name="acti.tests.LoginPageTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
